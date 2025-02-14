@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Special</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="overlay hidden"></div> <!-- Overlay blur background -->
+
+    <div class="container">
+        <audio id="bgMusic" loop>
+            <source src="valentine.mp3" type="audio/mpeg">
+        </audio>
+        <button id="playMusic" class="btn">Putar Musik 🎶</button>
+
+        <div class="card" id="openGallery">
+            <h2 class="title">💖 Happy Valentine's Day! 💖</h2>
+            <p class="subtitle">Untuk seseorang yang spesial, semoga hari ini penuh cinta dan kebahagiaan.</p>
+            <button class="btn">Klik Untuk Melihat Galeri</button>
+        </div>
+    </div>
+
+    <!-- Galeri Foto -->
+    <div class="gallery hidden">
+        <div class="photo-viewer zoom-effect">
+            <img id="galleryImage" src="image1.jpg" alt="Foto Romantis">
+            <p id="caption">Momen indah bersama 💕</p>
+            <button id="prevImage" class="btn"><i class="bi bi-arrow-left-circle"></i></button>
+            <button id="nextImage" class="btn"><i class="bi bi-arrow-right-circle"></i></button>
+            <button id="closeGallery" class="btn close-btn">Kembali</button>
+        </div>
+    </div>
+
+    <!-- Dekorasi bunga -->
+    <img src="bunga1.png" class="bunga bawah-kiri" alt="Bunga dekorasi">
+    <img src="bunga2.png" class="bunga atas-kanan" alt="Bunga dekorasi">
+
+    <script src="script.js"></script>
+</body>
+</html>
